@@ -18,4 +18,95 @@ body{
     padding: 0 20px 0 20px;
     position: sticky;
     top: 0;
+    margin-bottom: 30px;
 }
+
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.item-1, .item-2, .item-3{
+    width: 20%;
+    height: 400px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+.item-1 img, .item-2 img, .item-3 img{
+    height: 300px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 450px) {
+
+    .items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .item-1, .item-2, .item-3{
+        width: 80%;
+        height: 400px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        border: 5px solid white;
+        border-radius: 10px;
+    }
+  }
+
+  @media screen and (min-width: 450px) and (max-width: 768px) {
+
+    .items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .item-1, .item-2, .item-3{
+        width: 45%;
+        height: 400px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        border: 5px solid white;
+        border-radius: 10px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+
+    .items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .item-1, .item-2, .item-3{
+        width: 23%;
+        height: 400px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        border: 5px solid white;
+        border-radius: 10px;
+    }
+  }
